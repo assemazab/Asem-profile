@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asem Mohamed Gamal — Cloud & DevOps Engineer</title>
+<meta name="description" content="Portfolio of Asem Mohamed Gamal, a Cloud & DevOps engineer specializing in containerization, CI/CD, infrastructure automation, and AWS/Huawei Cloud." />
+<meta name="theme-color" content="#0A0E14" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Asem Mohamed Gamal — Cloud & DevOps Engineer" />
+<meta property="og:description" content="Portfolio of Asem Mohamed Gamal, a Cloud & DevOps engineer specializing in containerization, CI/CD, infrastructure automation, and AWS/Huawei Cloud." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar">
+  <nav class="nav-inner">
+    <div class="nav-row">
+      <button class="brand" data-scroll="home" aria-label="Go to home">
+        <span class="dollar">$</span> asem<span class="dim">.dev</span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-scroll="home">Home</a></li>
+        <li><a href="#about" data-scroll="about">About</a></li>
+        <li><a href="#services" data-scroll="services">Services</a></li>
+        <li><a href="#skills" data-scroll="skills">Skills</a></li>
+        <li><a href="#projects" data-scroll="projects">Projects</a></li>
+        <li><a href="#certifications" data-scroll="certifications">Certifications</a></li>
+        <li><a href="#experience" data-scroll="experience">Experience</a></li>
+        <li><a href="#education" data-scroll="education">Education</a></li>
+        <li><a href="#learning" data-scroll="learning">Learning</a></li>
+        <li><a href="#contact" data-scroll="contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="icon" viewBox="0 0 24 24" width="22" height="22"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#home" data-scroll="home">Home</a>
+      <a href="#about" data-scroll="about">About</a>
+      <a href="#services" data-scroll="services">Services</a>
+      <a href="#skills" data-scroll="skills">Skills</a>
+      <a href="#projects" data-scroll="projects">Projects</a>
+      <a href="#certifications" data-scroll="certifications">Certifications</a>
+      <a href="#experience" data-scroll="experience">Experience</a>
+      <a href="#education" data-scroll="education">Education</a>
+      <a href="#learning" data-scroll="learning">Learning</a>
+      <a href="#contact" data-scroll="contact">Contact</a>
+    </div>
+  </nav>
+  <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal in-view">
+          <div class="badge"><span class="dot"></span> Open to internships & training opportunities</div>
+
+          <h1 class="hero-name">Asem Mohamed Gamal</h1>
+          <p class="hero-title">Cloud & DevOps Engineer</p>
+
+          <p class="hero-summary">Aspiring Cloud Computing and DevOps engineer with a foundation in computer and communication engineering. Focused on cloud infrastructure, automation, and CI/CD, with hands-on practice across Linux administration, containerization, and infrastructure as code. Currently building toward AWS, Azure, Docker, Kubernetes, and Jenkins proficiency while contributing to scalable, reliable systems.</p>
+
+          <div class="hero-location">
+            <svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Cairo, Egypt
+          </div>
+
+          <div class="hero-actions">
+            <a href="cv.pdf" download class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Download CV
+            </a>
+            <button class="btn btn-outline" data-scroll="projects">View Projects</button>
+            <button class="btn btn-ghost" data-scroll="contact">
+              <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Contact Me
+            </button>
+          </div>
+        </div>
+
+        <div class="terminal reveal in-view">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+            <span class="terminal-path">asem@cloud:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-body"></div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><div class="stat-value">2022–27</div><div class="stat-label">Engineering Degree</div></div>
+        <div class="stat"><div class="stat-value">3.63/4</div><div class="stat-label">GPA</div></div>
+        <div class="stat"><div class="stat-value">4</div><div class="stat-label">Cloud & DevOps Courses</div></div>
+        <div class="stat"><div class="stat-value">1</div><div class="stat-label">Cloud Certification</div></div>
+      </div>
+
+      <button class="scroll-hint" data-scroll="about" aria-label="Scroll to About section">
+        <svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M12 5v14"/><path d="m6 13 6 6 6-6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> cat about.md</div>
+        <h2 class="section-title">About</h2>
+        <p class="section-desc">Where I'm coming from, and the kind of problems I want to work on.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a computer engineering student at Monufia University building a career in cloud infrastructure and DevOps. My interest started with understanding how systems run reliably at scale, which pulled me toward Linux administration, containerization, and the automation that keeps infrastructure consistent — Docker, Kubernetes, Terraform, and Ansible.</p>
+          <p>I'm currently a DevOps intern with the Digital Egypt Pioneers Initiative, where I get hands-on with CI/CD pipelines and infrastructure automation, alongside coursework in AWS and Huawei Cloud fundamentals — service models, networking, high availability, and security.</p>
+          <p>I care about systems that are reproducible and easy to reason about: infrastructure defined as code, deployments that don't depend on memory of manual steps, and monitoring that tells you what's actually happening. I'm looking for an internship or training role where I can apply that while continuing to grow into Azure and Jenkins.</p>
+        </div>
+
+        <div class="about-side reveal">
+          <div class="card side-card">
+            <h3>soft_skills</h3>
+            <div class="chip-row">
+              <span class="chip">Teamwork</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Continuous Learning</span>
+            </div>
+          </div>
+          <div class="card side-card">
+            <h3>languages</h3>
+            <div class="lang-row"><span>English</span><span class="level">Proficient</span></div>
+            <div class="lang-row"><span>Arabic</span><span class="level">Native</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> ls ./what-i-do</div>
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-desc">Areas I can contribute in as an intern or junior engineer, grounded in what I've actually built and practiced.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
+          <h3 class="card-title">CI/CD & GitOps</h3>
+          <p class="card-desc">Building automated pipelines that move code from commit to deployment, with hands-on practice via GitHub Actions.</p>
+          <div class="chip-row"><span class="tech-chip">GitHub Actions</span><span class="tech-chip">Git</span><span class="tech-chip">GitHub</span></div>
+        </div>
+
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+          <h3 class="card-title">Containerization</h3>
+          <p class="card-desc">Packaging and orchestrating applications with Docker and Kubernetes, backed by Nginx for serving and routing.</p>
+          <div class="chip-row"><span class="tech-chip">Docker</span><span class="tech-chip">Kubernetes</span><span class="tech-chip">Nginx</span></div>
+        </div>
+
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M14.5 4 9 21"/><path d="M17 8h5v5"/><path d="m22 8-4 4"/><path d="M2 16h5v5"/><path d="m2 21 4-4"/></svg></div>
+          <h3 class="card-title">Infrastructure Automation</h3>
+          <p class="card-desc">Provisioning and configuring infrastructure as code instead of by hand, using Terraform and Ansible.</p>
+          <div class="chip-row"><span class="tech-chip">Terraform</span><span class="tech-chip">Ansible</span></div>
+        </div>
+
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+          <h3 class="card-title">Cloud Infrastructure</h3>
+          <p class="card-desc">Architecting core cloud resources — compute, storage, networking, and IAM — on AWS and Huawei Cloud.</p>
+          <div class="chip-row"><span class="tech-chip">AWS (EC2, S3, VPC, Route 53)</span><span class="tech-chip">IAM</span><span class="tech-chip">Huawei Cloud</span></div>
+        </div>
+
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+          <h3 class="card-title">Linux Administration</h3>
+          <p class="card-desc">Managing users, permissions, and processes on RHEL-based systems, with Bash scripting for day-to-day automation.</p>
+          <div class="chip-row"><span class="tech-chip">Linux (RHEL)</span><span class="tech-chip">Bash</span></div>
+        </div>
+
+        <div class="card service-card reveal">
+          <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" width="20" height="20"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <h3 class="card-title">Monitoring & Observability</h3>
+          <p class="card-desc">Watching infrastructure health and surfacing it clearly, with working knowledge of service mesh observability.</p>
+          <div class="chip-row"><span class="tech-chip">Prometheus</span><span class="tech-chip">Grafana</span><span class="tech-chip">Istio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> skills --all</div>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <p class="section-desc">Grouped by domain. Badge color marks how deep the experience currently goes.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card skill-card reveal">
+          <h3 class="prompt">cloud --list</h3>
+          <p class="group-label">Cloud Platforms</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">AWS</span>
+            <span class="badge-pill hands">Huawei Cloud</span>
+            <span class="badge-pill learning">Azure</span>
+          </div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="prompt">containers --list</h3>
+          <p class="group-label">Containerization & Orchestration</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">Docker</span>
+            <span class="badge-pill hands">Kubernetes</span>
+            <span class="badge-pill hands">Nginx</span>
+          </div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="prompt">iac --list</h3>
+          <p class="group-label">Infrastructure as Code</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">Terraform</span>
+            <span class="badge-pill hands">Ansible</span>
+          </div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="prompt">cicd --list</h3>
+          <p class="group-label">CI/CD & GitOps</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">GitHub Actions</span>
+            <span class="badge-pill hands">Git & GitHub</span>
+          </div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="prompt">monitor --list</h3>
+          <p class="group-label">Monitoring & Observability</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">Prometheus</span>
+            <span class="badge-pill hands">Grafana</span>
+            <span class="badge-pill working">Istio</span>
+          </div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="prompt">sysadmin --list</h3>
+          <p class="group-label">OS, Networking & Scripting</p>
+          <div class="chip-row">
+            <span class="badge-pill hands">Linux (RHEL)</span>
+            <span class="badge-pill hands">Bash Scripting</span>
+            <span class="badge-pill working">Network Fundamentals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend reveal">
+        <span class="sw"><span class="dot" style="background:var(--teal)"></span> Hands-on</span>
+        <span class="sw"><span class="dot" style="background:var(--amber)"></span> Working knowledge</span>
+        <span class="sw"><span class="dot" style="background:var(--muted)"></span> Learning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> ls ./projects</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Hands-on builds where I applied containerization and cloud deployment concepts.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card project-card reveal">
+          <div class="project-cat">Containerization</div>
+          <h3 class="card-title">Containerized Notes App</h3>
+          <div class="project-field">
+            <span class="label">challenge</span>
+            <p>Package a multi-service web app so it runs identically anywhere.</p>
+          </div>
+          <div class="project-field">
+            <span class="label">implementation</span>
+            <p>A Flask app served behind Nginx with a PostgreSQL database, each running in its own container and wired together with Docker Compose.</p>
+          </div>
+          <div class="chip-row" style="margin-top:auto; margin-bottom: 8px;">
+            <span class="tech-chip plain">Flask</span>
+            <span class="tech-chip plain">PostgreSQL</span>
+            <span class="tech-chip plain">Nginx</span>
+            <span class="tech-chip plain">Docker</span>
+            <span class="tech-chip plain">Docker Compose</span>
+          </div>
+        </article>
+
+        <article class="card project-card reveal">
+          <div class="project-cat">Full-Stack + Cloud Deployment</div>
+          <h3 class="card-title">Cyra — AI Resume Builder</h3>
+          <div class="project-field">
+            <span class="label">challenge</span>
+            <p>Ship an AI-assisted resume builder with a production deployment path.</p>
+          </div>
+          <div class="project-field">
+            <span class="label">implementation</span>
+            <p>React/TypeScript frontend with a Django backend; exploring a hybrid AWS architecture (S3 + CloudFront for the frontend, ECS/Fargate + RDS for the backend) with multi-stage Docker builds and Gunicorn.</p>
+          </div>
+          <div class="chip-row" style="margin-top:auto; margin-bottom: 8px;">
+            <span class="tech-chip plain">React</span>
+            <span class="tech-chip plain">TypeScript</span>
+            <span class="tech-chip plain">Django</span>
+            <span class="tech-chip plain">Docker</span>
+            <span class="tech-chip plain">AWS (S3, CloudFront, ECS, RDS)</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> cert --list</div>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-desc">Formal credentials earned alongside coursework and training.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card cert-card reveal">
+          <div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></div>
+          <h3 class="card-title">Huawei Certified Cloud Developer Associate (HCCDA) — Tech Essentials</h3>
+          <p class="cert-meta">Huawei</p>
+          <p class="cert-date">Sep 2025</p>
+          <p class="card-desc">Comprehensive knowledge of Huawei Cloud services, including compute, storage, networking, and security.</p>
+          <div class="cert-footer">
+            <span class="cred-id"><svg class="icon" viewBox="0 0 24 24" width="13" height="13"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg> HWENDCTEDA562969</span>
+          </div>
+        </div>
+
+        <div class="card cert-card reveal">
+          <div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></div>
+          <h3 class="card-title">DevOps Foundations</h3>
+          <p class="cert-meta">Sprints × Microsoft Summer Camp</p>
+          <p class="cert-date">Sep 2025</p>
+          <p class="card-desc">40-hour intensive program covering core DevOps processes, containerization, and AWS cloud basics.</p>
+        </div>
+
+        <div class="card cert-card reveal">
+          <div class="cert-icon"><svg class="icon" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></div>
+          <h3 class="card-title">Red Hat System Administration I & II</h3>
+          <p class="cert-meta">MaharaTech (ITI)</p>
+          <p class="card-desc">Linux administration fundamentals — user management, permissions, processes, and basic networking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> log --experience</div>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-desc">Where I've been putting DevOps and cloud fundamentals into practice.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item current reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>DevOps Intern</h3>
+              <span class="timeline-dates">Jul 2026 — Present</span>
+            </div>
+            <p class="timeline-company">Digital Egypt Pioneers Initiative (DEPI)</p>
+            <ul class="timeline-points">
+              <li>Acquiring hands-on experience building CI/CD pipelines, containerization workflows, and infrastructure automation.</li>
+            </ul>
+            <div class="tech-row">
+              <span class="tech-chip plain">Linux (RHEL)</span><span class="tech-chip plain">Bash</span><span class="tech-chip plain">Git</span>
+              <span class="tech-chip plain">Docker</span><span class="tech-chip plain">Kubernetes</span><span class="tech-chip plain">Nginx</span>
+              <span class="tech-chip plain">GitHub Actions</span><span class="tech-chip plain">Ansible</span><span class="tech-chip plain">Terraform</span>
+              <span class="tech-chip plain">Prometheus</span><span class="tech-chip plain">Grafana</span><span class="tech-chip plain">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Cloud Essentials</h3>
+              <span class="timeline-dates">Aug 2025 — Aug 2025</span>
+            </div>
+            <p class="timeline-company">National Telecommunication Institute (NTI)</p>
+            <ul class="timeline-points">
+              <li>Covered cloud service models (IaaS, PaaS, SaaS), virtualization, and networking architectures (VPC / Subnets).</li>
+              <li>Focused on high-availability design, security best practices, and resource management across AWS and Huawei Cloud.</li>
+            </ul>
+            <div class="tech-row">
+              <span class="tech-chip plain">AWS</span><span class="tech-chip plain">Huawei Cloud</span><span class="tech-chip plain">VPC</span><span class="tech-chip plain">Virtualization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> cat education.md</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="card edu-card reveal">
+        <div class="edu-icon"><svg class="icon" viewBox="0 0 24 24" width="22" height="22"><path d="m22 10-10-5L2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></div>
+        <div>
+          <h3>B.Sc. in Computer Engineering</h3>
+          <p>Faculty of Engineering — Computer Engineering Department</p>
+          <p>Monufia University</p>
+          <div class="edu-meta">
+            <span>2022 — 2027</span>
+            <span class="gpa">GPA 3.63 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEARNING ================= -->
+  <section id="learning" class="section">
+    <div class="container">
+      <div class="learning-grid">
+        <div>
+          <div class="section-head reveal">
+            <div class="eyebrow"><span>asem@cloud:~$</span> tail -f learning.log</div>
+            <h2 class="section-title">Learning Journey</h2>
+            <p class="section-desc">Coursework that's shaped my cloud and DevOps foundation.</p>
+          </div>
+
+          <div class="card course-card reveal">
+            <div class="course-icon"><svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <div>
+              <div class="course-head"><h3>Cloud Essentials</h3><span class="course-date">Aug 2025</span></div>
+              <p class="course-issuer">National Telecommunication Institute (NTI)</p>
+              <p class="course-desc">Cloud service models (IaaS, PaaS, SaaS), virtualization, and networking architectures (VPC / Subnets); high-availability design and security best practices across AWS and Huawei Cloud.</p>
+            </div>
+          </div>
+
+          <div class="card course-card reveal">
+            <div class="course-icon"><svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <div>
+              <div class="course-head"><h3>Cloud Services Management and Operation</h3></div>
+              <p class="course-issuer">National Telecommunication Institute (NTI)</p>
+              <p class="course-desc">Core AWS infrastructure, security fundamentals, and cloud economics — EC2, S3, VPC, and Route 53 for scalable systems; IAM policies for access control; CloudWatch for monitoring.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow reveal"><span>asem@cloud:~$</span> highlights --show</div>
+          <div class="card highlights-list reveal">
+            <div class="highlight-row">
+              <svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="m12 3 1.9 4.5L18 9l-4.1 1.5L12 15l-1.9-4.5L6 9l4.1-1.5L12 3Z"/></svg>
+              <div><p class="highlight-label">3.63 / 4.00 GPA</p><p class="highlight-detail">Computer Engineering, Monufia University</p></div>
+            </div>
+            <div class="highlight-row">
+              <svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="m12 3 1.9 4.5L18 9l-4.1 1.5L12 15l-1.9-4.5L6 9l4.1-1.5L12 3Z"/></svg>
+              <div><p class="highlight-label">Huawei Certified Cloud Developer Associate</p><p class="highlight-detail">Credential ID HWENDCTEDA562969</p></div>
+            </div>
+            <div class="highlight-row">
+              <svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="m12 3 1.9 4.5L18 9l-4.1 1.5L12 15l-1.9-4.5L6 9l4.1-1.5L12 3Z"/></svg>
+              <div><p class="highlight-label">40-hour DevOps Foundations program</p><p class="highlight-detail">Sprints × Microsoft Summer Camp</p></div>
+            </div>
+            <div class="highlight-row">
+              <svg class="icon" viewBox="0 0 24 24" width="15" height="15"><path d="m12 3 1.9 4.5L18 9l-4.1 1.5L12 15l-1.9-4.5L6 9l4.1-1.5L12 3Z"/></svg>
+              <div><p class="highlight-label">Red Hat System Administration I & II</p><p class="highlight-detail">MaharaTech (ITI)</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span>asem@cloud:~$</span> ./send-message.sh</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Open to internships and training opportunities in cloud and DevOps — reach out any time.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links reveal" id="contact-links">
+          <!-- populated by script.js from PROFILE data -->
+          <div class="card contact-link">
+            <span class="ico"><svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span class="txt">Cairo, Egypt</span>
+          </div>
+          <a class="card contact-link" href="tel:01503178835">
+            <span class="ico"><svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></svg></span>
+            <span class="txt">01503178835</span>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row two">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+              <p class="error" id="name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+              <p class="error" id="email-error" hidden></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What's this about?" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or question..."></textarea>
+            <p class="error" id="message-error" hidden></p>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+            <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
+            Send Message
+          </button>
+          <p class="form-hint">Opens your email client with this message pre-filled.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="name"><span class="dollar">$</span> Asem Mohamed Gamal</p>
+        <p class="title">Cloud & DevOps Engineer</p>
+        <div class="footer-social" id="footer-social">
+          <a href="tel:01503178835" aria-label="Phone"><svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="#home" data-scroll="home">Home</a>
+        <a href="#about" data-scroll="about">About</a>
+        <a href="#services" data-scroll="services">Services</a>
+        <a href="#skills" data-scroll="skills">Skills</a>
+        <a href="#projects" data-scroll="projects">Projects</a>
+        <a href="#certifications" data-scroll="certifications">Certifications</a>
+        <a href="#experience" data-scroll="experience">Experience</a>
+        <a href="#education" data-scroll="education">Education</a>
+        <a href="#learning" data-scroll="learning">Learning</a>
+        <a href="#contact" data-scroll="contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom" id="footer-bottom"></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
