@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asem Mohamed Gamal — Cloud & DevOps Engineer</title>
+<meta name="description" content="Portfolio of Asem Mohamed Gamal, a Cloud & DevOps engineer building CI/CD pipelines, containerized infrastructure and automation with AWS, Docker, Kubernetes and Terraform.">
+<meta name="theme-color" content="#0B0F14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asem Mohamed Gamal — Cloud & DevOps Engineer">
+<meta property="og:description" content="Cloud & DevOps engineer portfolio — AWS, Docker, Kubernetes, Terraform, Ansible, CI/CD.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230B0F14%22/><text x=%2250%22 y=%2266%22 font-family=%22monospace%22 font-size=%2258%22 fill=%22%23FF8A3D%22 text-anchor=%22middle%22>&gt;_</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <span class="brand-mark">&gt;_</span>
+      <span class="brand-text">asem<span class="cursor">_</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#labs" class="nav-link">Labs</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta">Get in touch</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Cairo, Egypt · Open to internships &amp; training opportunities</p>
+        <h1 class="hero-title">Asem Mohamed Gamal</h1>
+        <p class="hero-role">Cloud &amp; DevOps Engineer</p>
+        <p class="hero-desc">
+          "Building and scaling resilient cloud infrastructure through seamless automation and robust CI/CD pipelines."
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/Asem_Mohamed_CV.pdf" download class="btn btn-primary">Download CV</a>
+          <a href="#certifications" class="btn btn-ghost">View certifications</a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>GPA</dt>
+            <dd>3.63<span>/4.0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Certifications &amp; courses</dt>
+            <dd>6<span>+</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Current</dt>
+            <dd>DEPI<span> intern</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-terminal" role="img" aria-label="Terminal window showing a summary of Asem's profile and skills">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">asem@cloud-engineer: ~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <span class="section-kicker">01 — About</span>
+        <h2 class="section-title">Learning cloud infrastructure by building it</h2>
+      </div>
+      <div class="about-body">
+        <p>
+          I'm a Computer Engineering student at the Faculty of Engineering, Monufia
+          University (2022–2027), specializing in cloud computing and DevOps. My focus is on
+          turning course theory into practice: standing up CI/CD pipelines, containerizing
+          applications, and automating infrastructure with tools like Docker, Kubernetes,
+          Terraform and Ansible.
+        </p>
+        <p>
+          I'm currently a DevOps Intern with the Digital Egypt Pioneers Initiative (DEPI),
+          getting hands-on with Linux administration, GitHub Actions, and monitoring stacks
+          such as Prometheus and Grafana. Alongside that, I've completed structured cloud
+          training through the National Telecommunication Institute (NTI) covering AWS,
+          Huawei Cloud, networking architecture, and security fundamentals.
+        </p>
+        <p>
+          I enjoy problems where infrastructure, automation and reliability meet — the kind
+          of work that makes systems easier to deploy, monitor and trust.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">02 — Focus areas</span>
+        <h2 class="section-title">Where I can contribute</h2>
+      </div>
+      <div class="cards-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">03 — Technical arsenal</span>
+        <h2 class="section-title">Tools &amp; technologies</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ LABS ============ -->
+  <section class="section section-alt" id="labs">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">04 — Hands-on practice</span>
+        <h2 class="section-title">Labs I've documented</h2>
+      </div>
+      <div class="labs-grid" id="labsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">05 — Certifications</span>
+        <h2 class="section-title">Credentials &amp; training</h2>
+        <p class="section-sub">Click any card to view the certificate.</p>
+      </div>
+      <div class="cert-grid" id="certGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">06 — Experience</span>
+        <h2 class="section-title">Where I've worked &amp; trained</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">07 — Education</span>
+        <h2 class="section-title">Academic background</h2>
+      </div>
+      <div class="edu-card">
+        <div class="edu-main">
+          <h3>B.Sc. in Computer Engineering</h3>
+          <p class="edu-org">Faculty of Engineering, Monufia University</p>
+          <p class="edu-meta">2022 – 2027 · Computer Engineering Department</p>
+        </div>
+        <div class="edu-gpa">
+          <span class="gpa-num">3.63</span>
+          <span class="gpa-label">GPA / 4.0</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEARNING JOURNEY ============ -->
+  <section class="section section-alt" id="learning">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">08 — Currently learning</span>
+        <h2 class="section-title">What I'm building on next</h2>
+      </div>
+      <ul class="learning-list" id="learningList"></ul>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">09 — Milestones</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achieve-grid" id="achieveGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="contact-info">
+        <span class="section-kicker">10 — Contact</span>
+        <h2 class="section-title">Let's talk</h2>
+        <p class="section-sub">
+          Open to internships, training opportunities and entry-level cloud/DevOps roles.
+        </p>
+
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+          <span class="form-error" data-for="cf-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+          <span class="form-error" data-for="cf-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" required>
+          <span class="form-error" data-for="cf-subject"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+          <span class="form-error" data-for="cf-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+        <p class="form-note" id="formNote">Opens your email client with this message pre-filled.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">&gt;_</span>
+      <div>
+        <p class="footer-name">Asem Mohamed Gamal Abdelshafi</p>
+        <p class="footer-role">Cloud &amp; DevOps Engineer</p>
+      </div>
+    </div>
+    <nav class="footer-nav" id="footerNav"></nav>
+    <p class="footer-copy">© <span id="year"></span> Asem Mohamed Gamal. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<!-- ============ CERT MODAL ============ -->
+<div class="modal-overlay" id="certModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-image-wrap">
+      <img id="modalImage" alt="" class="modal-image">
+      <div class="modal-noimage" id="modalNoImage">No certificate image available — details below.</div>
+    </div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p class="modal-issuer" id="modalIssuer"></p>
+      <dl class="modal-meta" id="modalMeta"></dl>
+      <a href="#" id="modalVerify" class="btn btn-ghost modal-verify" target="_blank" rel="noopener noreferrer">Verify credential</a>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
