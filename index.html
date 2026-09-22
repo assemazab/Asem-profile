@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asem Mohamed Gamal — Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Asem Mohamed Gamal — Cloud &amp; DevOps engineer. I containerize applications and automate their deployment on AWS with Docker, Kubernetes, Terraform and Ansible.">
+<meta name="keywords" content="Asem Mohamed Gamal, DevOps Engineer, Cloud Engineer, AWS, Docker, Kubernetes, Terraform, Ansible, CI/CD, Egypt">
+<meta name="author" content="Asem Mohamed Gamal">
+<meta name="theme-color" content="#070D1C">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asem Mohamed Gamal — Cloud &amp; DevOps Engineer">
+<meta property="og:description" content="I containerize applications and automate their deployment on AWS — Docker, Kubernetes, Terraform, Ansible, CI/CD.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23070D1C%22/><text x=%2250%22 y=%2266%22 font-family=%22monospace%22 font-size=%2258%22 fill=%22%233D8BFF%22 text-anchor=%22middle%22>&gt;_</text></svg>">
+
+<!-- Set theme + language before first paint to avoid a flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("portfolio-theme");
+      if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+      var l = localStorage.getItem("portfolio-lang");
+      if (l === "ar") {
+        document.documentElement.lang = "ar";
+        document.documentElement.dir = "rtl";
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand" aria-label="Home">
+      <span class="brand-badge" id="brandBadge">A·G</span>
+      <span class="brand-text">asem<span class="cursor">_</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Sections"></nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.9 1.9M17.5 17.5l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.9-1.9M17.5 6.5l1.9-1.9"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 6.8 6.8 0 0 0 20 14.5Z"/></svg>
+      </button>
+
+      <button class="icon-btn lang-btn" id="langToggle" type="button" aria-label="Switch language">
+        <span id="langLabel">AR</span>
+      </button>
+
+      <a href="#contact" class="nav-cta" data-ui="connect">Connect Me</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ 01 HOME / HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><span class="pulse"></span><span data-ui="openTo"></span></p>
+        <p class="hero-greeting" data-profile="greeting"></p>
+        <h1 class="hero-title" data-profile="name"></h1>
+        <p class="hero-role" data-profile="title"></p>
+        <p class="hero-usp" data-profile="uspShort"></p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-ui="viewWork"></a>
+          <a href="assets/Asem_Mohamed_CV.pdf" download class="btn btn-ghost" data-ui="downloadCV"></a>
+        </div>
+
+        <dl class="hero-stats" id="heroStats"></dl>
+      </div>
+
+      <div class="hero-terminal" role="img" aria-label="Terminal window summarising the profile">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">asem@cloud-engineer: ~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 02 ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="about.kicker"></span>
+        <h2 class="section-title" data-sec="about.hook"></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card about-card-main">
+          <p class="about-lead" data-about="whoIAm"></p>
+          <p class="about-body" data-about="specialize"></p>
+
+          <blockquote class="about-usp" data-profile="usp"></blockquote>
+
+          <p class="about-body" data-about="different"></p>
+          <div class="tag-row" id="aboutTags"></div>
+        </article>
+
+        <aside class="about-card about-side">
+          <div class="about-avatar" id="aboutAvatar">A·G</div>
+          <p class="about-side-name" data-profile="fullName"></p>
+          <p class="about-side-role" data-profile="title"></p>
+          <ul class="about-facts" id="aboutFacts"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 EDUCATION & CERTIFICATES ============ -->
+  <section class="section section-alt" id="education">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="education.kicker"></span>
+        <h2 class="section-title" data-sec="education.hook"></h2>
+      </div>
+
+      <div class="edu-split">
+        <div class="edu-col">
+          <h3 class="col-heading" data-ui="eduTitle"></h3>
+          <div class="edu-card" id="eduCard"></div>
+        </div>
+        <div class="edu-col">
+          <h3 class="col-heading" data-ui="certsTitle"></h3>
+          <p class="col-note" data-ui="certClick"></p>
+          <div class="cert-grid" id="certGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="skills.kicker"></span>
+        <h2 class="section-title" data-sec="skills.hook"></h2>
+        <p class="section-sub" data-sec="skills.sub"></p>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 05 EXPERIENCE ============ -->
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="experience.kicker"></span>
+        <h2 class="section-title" data-sec="experience.hook"></h2>
+      </div>
+      <div class="exp-list" id="expList"></div>
+    </div>
+  </section>
+
+  <!-- ============ 06 SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="services.kicker"></span>
+        <h2 class="section-title" data-sec="services.hook"></h2>
+      </div>
+      <div class="cards-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 07 PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="projects.kicker"></span>
+        <h2 class="section-title" data-sec="projects.hook"></h2>
+        <p class="section-sub" data-sec="projects.sub"></p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 08 PRICING ============ -->
+  <section class="section" id="pricing">
+    <div class="section-inner">
+      <div class="section-head section-head-center">
+        <span class="section-kicker" data-sec="pricing.kicker"></span>
+        <h2 class="section-title" data-sec="pricing.hook"></h2>
+        <p class="section-sub" data-sec="pricing.sub"></p>
+      </div>
+      <div class="pricing-grid" id="pricingGrid"></div>
+      <p class="pricing-note" id="pricingNote"></p>
+    </div>
+  </section>
+
+  <!-- ============ 09 ACHIEVEMENTS ============ -->
+  <section class="section section-alt" id="achievements">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker" data-sec="achievements.kicker"></span>
+        <h2 class="section-title" data-sec="achievements.hook"></h2>
+      </div>
+      <div class="achieve-grid" id="achieveGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 10 CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="contact-info">
+        <span class="section-kicker" data-sec="contact.kicker"></span>
+        <h2 class="section-title" data-sec="contact.hook"></h2>
+        <p class="section-sub" data-sec="contact.sub"></p>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text" id="cf-name" name="name" required autocomplete="name" data-ph="formName">
+          <span class="form-error" data-for="cf-name"></span>
+        </div>
+        <div class="form-row">
+          <input type="email" id="cf-email" name="email" required autocomplete="email" data-ph="formEmail">
+          <span class="form-error" data-for="cf-email"></span>
+        </div>
+        <div class="form-row">
+          <input type="text" id="cf-subject" name="subject" required data-ph="formSubject">
+          <span class="form-error" data-for="cf-subject"></span>
+        </div>
+        <div class="form-row">
+          <textarea id="cf-message" name="message" rows="5" required data-ph="formMessage"></textarea>
+          <span class="form-error" data-for="cf-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" data-ui="formSend"></button>
+        <p class="form-note" data-ui="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-col footer-connect">
+      <h3 class="footer-heading" data-ui="letsConnect"></h3>
+      <p class="footer-text" id="footerConnect"></p>
+      <ul class="footer-socials" id="footerSocials"></ul>
+    </div>
+
+    <div class="footer-col footer-center">
+      <div class="footer-logo"><span class="code-mark">&lt;/&gt;</span> <span class="logo-initials">A<span class="dot-sep">.</span>G</span></div>
+      <p class="footer-tagline" id="footerTagline"></p>
+      <p class="footer-platforms-label" data-ui="platforms"></p>
+      <ul class="footer-platforms" id="footerPlatforms"></ul>
+    </div>
+
+    <div class="footer-col footer-who">
+      <h3 class="footer-heading" data-ui="whoAmI"></h3>
+      <p class="footer-text" id="footerWho"></p>
+      <ul class="footer-contact" id="footerContact"></ul>
+      <a href="assets/Asem_Mohamed_CV.pdf" download class="footer-cv" data-ui="downloadCV"></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> <span data-profile="fullName"></span>. <span data-ui="rights"></span></p>
+    <p class="footer-built" data-ui="built"></p>
+  </div>
+</footer>
+
+<!-- ============ CERT MODAL ============ -->
+<div class="modal-overlay" id="certModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-image-wrap">
+      <img id="modalImage" alt="" class="modal-image">
+      <div class="modal-noimage" id="modalNoImage"></div>
+    </div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p class="modal-issuer" id="modalIssuer"></p>
+      <dl class="modal-meta" id="modalMeta"></dl>
+      <a href="#" id="modalVerify" class="btn btn-ghost modal-verify" target="_blank" rel="noopener noreferrer" data-ui="verify"></a>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
